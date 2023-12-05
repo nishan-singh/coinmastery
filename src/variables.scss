@@ -1,0 +1,14 @@
+$purple-clr: #1F1934;
+$dark-blue-clr: #13121B;
+$white-clr: #ffffff;
+
+//spacing
+$spacing-inline: 3rem;
+
+//mixins
+@mixin flex($align, $justify, $direction: row){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
