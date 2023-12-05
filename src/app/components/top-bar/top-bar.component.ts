@@ -73,8 +73,7 @@ import { CommonModule } from '@angular/common';
         </svg>
         Exchange 622
       </p>
-      <p>1.69 T</p>
-      <p class="progress">
+      <p class="market-cap">
         <svg
           weight="12px"
           height="12px"
@@ -99,6 +98,9 @@ import { CommonModule } from '@angular/common';
             ></path>
           </g>
         </svg>
+        1.69 T
+      </p>
+      <p class="progress">
         $124.45B
         <progress id="total-amount" value="34" max="100">34%</progress>
       </p>

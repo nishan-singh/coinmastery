@@ -12,7 +12,7 @@ $brdr-radius: 6px;
      width: 20px;
      height: 20px;
   }
-  .progress, .total-coins, .exchange{
+  .progress, .total-coins, .exchange, .market-cap{
     @include flex(center, center);
     gap: 4px;
     svg.bitcoin {
