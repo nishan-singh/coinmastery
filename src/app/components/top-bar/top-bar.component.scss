@@ -1,0 +1,30 @@
+@import '../../../variables.scss';
+
+.top-bar {
+  background-color: $purple-clr;
+  min-height: 48px;
+  color: $white-clr;
+  font-size: 15px;
+  @include flex(center, center);
+  gap: 12px;
+  .progress {
+    @include flex(center, center);
+    gap: 12px;
+  }
+  progress {
+    height: 8px;
+    width: 84px;
+    border-radius: 6px;
+  }
+  progress::-webkit-progress-bar {
+    background-color: rgba($white-clr, 0.7);
+    border-radius: 6px;
+  }
+  progress::-webkit-progress-value {
+    background-color: $white-clr;
+    border-radius: 6px;
+  }
+  progress::-moz-progress-bar {
+  }
+}
+
