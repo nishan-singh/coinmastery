@@ -1,0 +1,77 @@
+@import '../../../variables.scss';
+$padding: 10px 12px;
+$brdr-radius: 4px;
+$btns-height: 45px;
+$hover-clr:  hsl(253, 35%, 25%);
+
+header {
+  @include flex(center, space-between);
+  margin-inline: $spacing-inline;
+  height: 84px;
+}
+
+.right-side {
+   flex-basis: 50%;
+   @include flex(center, flex-end);
+   gap: 24px;
+
+   #search-coin, .currency, .diff-modes, .currencies-list {
+     color: $white-clr;
+     background-color: $purple-clr;
+     border-radius: $brdr-radius;
+     border: 1px solid rgba($white-clr, 0.1);
+  }
+   #search-coin, .currency, .diff-modes {
+     padding: $padding;
+     height: $btns-height;
+  }
+  .currency, .diff-modes {
+    transition: color 225ms linear;
+    &:hover {
+      background-color: $hover-clr;
+    }
+  }
+  #search-coin {
+    flex-basis: 50%;
+    &:focus {
+      color: $white-clr;
+    }
+  }
+
+  //select-menu
+  .different-currencies-wrapper {
+    position: relative;
+    .currencies-list {
+      position: absolute;
+      top: $btns-height + 4px;
+      width: 100%;
+      @include flex(center, center, column);
+      gap: 4px;
+      display: none;
+      li {
+        width: 100%;
+      }
+      button {
+        background-color: transparent;
+        color: $white-clr;
+        width: 100%;
+        padding: 4px;
+        transition: color 225ms linear;
+        &:hover {
+          background-color: $hover-clr;
+        }
+      }
+    }
+    .show-list {
+      display: flex;
+    }
+  }
+}
+
+//different color themes/ dark or light
+.diff-modes {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
