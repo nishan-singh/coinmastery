@@ -1,31 +1,45 @@
-@import '../../../variables.scss';
+@import "../../../variables.scss";
 $padding: 10px 12px;
 $brdr-radius: 4px;
 $btns-height: 45px;
-$hover-clr:  hsl(253, 35%, 25%);
+$hover-clr: hsl(253, 35%, 25%);
 
 header {
   @include flex(center, space-between);
   margin-inline: $spacing-inline;
   height: 84px;
+  .logo {
+    font-weight: 500;
+    font-size: clamp(1.5rem, 4vw, 1.75rem);
+    span {
+      color: $orange-clr;
+      font-style: italic;
+    }
+  }
 }
 
 .right-side {
-   flex-basis: 50%;
-   @include flex(center, flex-end);
-   gap: 24px;
+  flex-basis: 50%;
+  @include flex(center, flex-end);
+  gap: 24px;
 
-   #search-coin, .currency, .diff-modes, .currencies-list {
-     color: $white-clr;
-     background-color: $purple-clr;
-     border-radius: $brdr-radius;
-     border: 1px solid rgba($white-clr, 0.1);
+  #search-coin,
+  .currency,
+  .diff-modes,
+  .currencies-list {
+    color: $white-clr;
+    background-color: $purple-clr;
+    border-radius: $brdr-radius;
+    border: 1px solid rgba($white-clr, 0.1);
   }
-   #search-coin, .currency, .diff-modes {
-     padding: $padding;
-     height: $btns-height;
+  #search-coin,
+  .currency,
+  .diff-modes {
+    padding: $padding;
+    height: $btns-height;
   }
-  .currency, .diff-modes {
+  .currency,
+  .diff-modes {
     transition: color 225ms linear;
     &:hover {
       background-color: $hover-clr;

@@ -7,7 +7,7 @@ import { CommonModule } from "@angular/common";
   imports: [CommonModule],
   template: `
     <header>
-      <h2 class="logo">CoinMastery</h2>
+      <h2 class="logo">Coin<span>Mastery</span></h2>
       <div class="right-side">
         <input type="search" placeholder="Search..." id="search-coin">
         <div class="different-currencies-wrapper">
