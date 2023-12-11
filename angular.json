@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "coinmastery:build:production"
+              "buildTarget": "coinmastery:build:production"
             },
             "development": {
-              "browserTarget": "coinmastery:build:development"
+              "buildTarget": "coinmastery:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "coinmastery:build"
+            "buildTarget": "coinmastery:build"
           }
         },
         "test": {
