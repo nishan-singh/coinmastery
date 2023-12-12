@@ -15,11 +15,19 @@
       "prefix": "app",
       "architect": {
         "build": {
+<<<<<<< HEAD
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/coinmastery",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+=======
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/coinmastery",
             "index": "src/index.html",
             "main": "src/main.ts",
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
             "polyfills": [
               "zone.js"
             ],
@@ -51,6 +59,11 @@
               "outputHashing": "all"
             },
             "development": {
+<<<<<<< HEAD
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+=======
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
@@ -63,6 +76,7 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
             }
           },
           "defaultConfiguration": "production"

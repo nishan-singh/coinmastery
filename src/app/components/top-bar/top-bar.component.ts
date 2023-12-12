@@ -4,8 +4,10 @@ import { CommonModule } from "@angular/common";
 @Component({
   selector: "app-top-bar",
   standalone: true,
-  imports: [CommonModule],
+  imports: [],
   templateUrl: "./top-bar.component.html",
-  styleUrls: ["./top-bar.component.scss"],
+  styleUrl: "./top-bar.component.scss",
 })
-export class TopBarComponent {}
+export class TopBarComponent {
+}
+

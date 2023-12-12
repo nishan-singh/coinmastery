@@ -1,6 +1,14 @@
+<<<<<<< HEAD
+@import "./variables.scss";
+
+*,
+*::after,
+*::before {
+=======
 @import './variables.scss';
 
 *, *::after, *::before {
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,6 +16,45 @@
 
 body {
   background-color: $dark-blue-clr;
+<<<<<<< HEAD
+  font-family:
+    i-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol,
+    Noto Color Emoji;
+  color: $white-clr;
+}
+
+input,
+button {
+  outline: transparent;
+  border: transparent;
+  font-family:
+    i-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Helvetica Neue,
+    Arial,
+    Noto Sans,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol,
+    Noto Color Emoji;
+=======
   font-family: i-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,
                Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,
                Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -20,6 +67,7 @@ input, button {
   font-family: i-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,
                Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,
                Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
   font-size: 16px;
 }
 
