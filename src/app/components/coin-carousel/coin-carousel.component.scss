@@ -1,0 +1,27 @@
+@import "../../../variables.scss";
+
+.coin-carousel {
+  @include flex(center, flex-start);
+  gap: 12px;
+  margin-inline: $spacing-inline;
+  margin-block: 1rem;
+  li {
+    @include flex(center, center);
+    background-color: $purple-clr;
+    padding: 8px 12px;
+    border-radius: 8px;
+    img {
+      margin-inline-end: 24px;
+    }
+    .price-wrapper {
+      @include flex(center, center);
+      gap: 24px;
+    }
+    .coin-details {
+      h3 {
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import '../../../variables.scss';
+$brdr-radius: 6px;
+
+.top-bar {
+  background-color: $purple-clr;
+  min-height: 48px;
+  font-size: 14px;
+  @include flex(center, center);
+  gap: 16px;
+  svg {
+     width: 20px;
+     height: 20px;
+  }
+  .progress, .total-coins, .exchange, .market-cap{
+    @include flex(center, center);
+    gap: 4px;
+    svg.bitcoin {
+      stroke: $orange-clr;
+    }
+  }
+  progress {
+    height: 8px;
+    width: 84px;
+    border-radius: $brdr-radius;
+  }
+  progress::-webkit-progress-bar {
+    border-radius:  $brdr-radius;
+    background-color: rgba($white-clr, 0.7);
+  }
+  progress::-webkit-progress-value {
+    border-radius: $brdr-radius;
+  }
+  progress::-moz-progress-bar {
+    border-radius: $brdr-radius;
+  }
+  //individual design/coloring
+  progress#total-amount::-webkit-progress-value {
+    background-color: $white-clr;
+  }
+  //bitcoin
+  progress#bitcoin::-webkit-progress-value {
+    background-color: $orange-clr;
+  }
+  //Eth
+  progress#eth::-webkit-progress-value {
+    background-color: $sky-blue-clr;
+  }
+
+}
+
+
+
