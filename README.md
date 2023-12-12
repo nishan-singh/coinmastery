@@ -1,10 +1,6 @@
 # Coinmastery
 
-<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
-=======
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
->>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
 
 ## Development server
 
