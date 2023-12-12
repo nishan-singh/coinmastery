@@ -4,7 +4,6 @@ $brdr-radius: 6px;
 .top-bar {
   background-color: $purple-clr;
   min-height: 48px;
-  color: $white-clr;
   font-size: 14px;
   @include flex(center, center);
   gap: 16px;
