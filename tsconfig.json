@@ -2,6 +2,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+<<<<<<< HEAD
+=======
+    "baseUrl": "./",
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -9,10 +13,16 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+<<<<<<< HEAD
     "skipLibCheck": true,
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
+=======
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

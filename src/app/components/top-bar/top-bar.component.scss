@@ -4,6 +4,10 @@ $brdr-radius: 6px;
 .top-bar {
   background-color: $purple-clr;
   min-height: 48px;
+<<<<<<< HEAD
+=======
+  color: $white-clr;
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
   font-size: 14px;
   @include flex(center, center);
   gap: 16px;
@@ -49,4 +53,7 @@ $brdr-radius: 6px;
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769

@@ -1,10 +1,19 @@
+<<<<<<< HEAD
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
+=======
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
 
 @Component({
   selector: 'app-header',
   standalone: true,
+<<<<<<< HEAD
   imports: [NgClass],
+=======
+  imports: [CommonModule],
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
   template: `
     <header>
       <h2 class="logo">Coin<span>Mastery</span></h2>
@@ -25,6 +34,7 @@ import { Component } from '@angular/core';
             class="currencies-list"
             [ngClass]="{ 'show-list': toggleOtherCurrencies }"
           >
+<<<<<<< HEAD
             @for (eachCurrency of currenciesArray; track eachCurrency) {
               <li>
                 <button type="button" (click)="getCurrencyVal(eachCurrency)">
@@ -32,6 +42,13 @@ import { Component } from '@angular/core';
                 </button>
               </li>
             }
+=======
+            <li *ngFor="let eachCurrency of currenciesArray">
+              <button type="button" (click)="getCurrencyVal(eachCurrency)">
+                {{ eachCurrency }}
+              </button>
+            </li>
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
           </ul>
         </div>
         <button
@@ -51,7 +68,11 @@ import { Component } from '@angular/core';
       </div>
     </header>
   `,
+<<<<<<< HEAD
   styleUrl: './header.component.scss',
+=======
+  styleUrls: ['./header.component.scss'],
+>>>>>>> d478c1b7676e583b53b7ab72f015b850d6048769
 })
 export class HeaderComponent {
   toggleOtherCurrencies = false;
