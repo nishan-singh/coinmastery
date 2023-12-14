@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <ul class="coin-carousel">
-      @for (eachCoin of coins; track eachCoin) {
+    <section class="coin-carousel-wrapper">
+      <button type="button" class="prev-btn"><</button>
+      <ul class="coin-carousel">
+        @for (eachCoin of coins; track eachCoin) {
         <li>
           <img src="/assets/img/icons/dark-mode.svg" width="24px" />
           <div class="coin-details">
@@ -17,8 +19,10 @@ import { Component } from '@angular/core';
             </div>
           </div>
         </li>
-      }
-    </ul>
+        }
+      </ul>
+      <button type="button" class="next-btn">></button>
+    </section>
   `,
   styleUrl: './coin-carousel.component.scss',
 })
