@@ -1,10 +1,24 @@
 @import "../../../variables.scss";
 
+.coin-carousel-wrapper {
+  @include flex(center, center);
+  button {
+    background-color: rgba($violet-clr, 0.4);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: $white-clr;
+  }
+}
+
 .coin-carousel {
   @include flex(center, flex-start);
   gap: 12px;
   margin-inline: $spacing-inline;
   margin-block: 1rem;
+  li:first-child {
+    background-color: $violet-clr;
+  }
   li {
     @include flex(center, center);
     background-color: $purple-clr;
