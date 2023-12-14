@@ -1,15 +1,16 @@
-$purple-clr: #1F1934;
-$dark-blue-clr: #13121B;
+$purple-clr: #1f1934;
+$dark-blue-clr: #13121b;
 $white-clr: #ffffff;
-$orange-clr: #FF8D00;
-$sky-blue-clr: #7C93DF;
+$orange-clr: #ff8d00;
+$sky-blue-clr: #7c93df;
+$violet-clr: rgb(97 97 214);
 $greenn-clr: rgb(1, 241, 227);
 
 //spacing
 $spacing-inline: 4rem;
 
 //mixins
-@mixin flex($align, $justify, $direction: row){
+@mixin flex($align, $justify, $direction: row) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
