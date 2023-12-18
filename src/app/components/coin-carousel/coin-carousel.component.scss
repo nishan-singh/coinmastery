@@ -24,8 +24,9 @@
     background-color: $purple-clr;
     padding: 8px 12px;
     border-radius: 8px;
-    img {
+    svg {
       margin-inline-end: 24px;
+      stroke: $orange-clr;
     }
     .price-wrapper {
       @include flex(center, center);

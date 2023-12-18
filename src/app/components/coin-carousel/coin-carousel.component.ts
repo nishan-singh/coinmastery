@@ -10,9 +10,9 @@ import { Component } from '@angular/core';
       <ul class="coin-carousel">
         @for (eachCoin of coins; track eachCoin) {
         <li>
-          <img src="/assets/img/icons/dark-mode.svg" width="24px" />
+          <img [src]="eachCoin.logo" width="24px" />
           <div class="coin-details">
-            <h3>{{ eachCoin }}</h3>
+            <h3>{{ eachCoin.name }}</h3>
             <div class="price-wrapper">
               <p>468.34</p>
               <p>0.005</p>
@@ -27,5 +27,18 @@ import { Component } from '@angular/core';
   styleUrl: './coin-carousel.component.scss',
 })
 export class CoinCarouselComponent {
-  coins = ['Bitcoin', 'Bitcoin', 'Bitcoin'];
+  coins = [
+    {
+      logo: '/assets/img/icons/bitcoin.svg',
+      name:'Bitcoin'
+    },
+    {
+      logo: '/assets/img/icons/bitcoin.svg',
+      name:'Bitcoin'
+    },
+    {
+      logo: '/assets/img/icons/bitcoin.svg',
+      name:'Bitcoin'
+    },
+  ]
 }
