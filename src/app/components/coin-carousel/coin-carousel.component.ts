@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <section class="coin-carousel-wrapper">
-      <button type="button" class="prev-btn"><</button>
+      <button type="button" class="prev-btn" aria-label="scroll left">
+        <img src="/assets/img/icons/left-arrow.svg" alt="" />
+      </button>
       <ul class="coin-carousel">
         @for (eachCoin of coins; track eachCoin) {
         <li>
@@ -21,7 +23,9 @@ import { Component } from '@angular/core';
         </li>
         }
       </ul>
-      <button type="button" class="next-btn">></button>
+      <button type="button" class="next-btn" aria-label="scroll right">
+        <img src="/assets/img/icons/right-arrow.svg" alt="" />
+      </button>
     </section>
   `,
   styleUrl: './coin-carousel.component.scss',
@@ -30,15 +34,15 @@ export class CoinCarouselComponent {
   coins = [
     {
       logo: '/assets/img/icons/bitcoin.svg',
-      name:'Bitcoin'
+      name: 'Bitcoin',
     },
     {
       logo: '/assets/img/icons/bitcoin.svg',
-      name:'Bitcoin'
+      name: 'Bitcoin',
     },
     {
       logo: '/assets/img/icons/bitcoin.svg',
-      name:'Bitcoin'
+      name: 'Bitcoin',
     },
-  ]
+  ];
 }
