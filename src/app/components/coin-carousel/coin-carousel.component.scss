@@ -8,6 +8,7 @@
     height: 48px;
     border-radius: 50%;
     color: $white-clr;
+    @include flex(center, center);
   }
 }
 
