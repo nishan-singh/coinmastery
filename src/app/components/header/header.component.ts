@@ -26,11 +26,11 @@ import { Component } from '@angular/core';
             [ngClass]="{ 'show-list': toggleOtherCurrencies }"
           >
             @for (eachCurrency of currenciesArray; track eachCurrency) {
-            <li>
-              <button type="button" (click)="getCurrencyVal(eachCurrency)">
-                {{ eachCurrency }}
-              </button>
-            </li>
+              <li>
+                <button type="button" (click)="getCurrencyVal(eachCurrency)">
+                  {{ eachCurrency }}
+                </button>
+              </li>
             }
           </ul>
         </div>
