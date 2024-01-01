@@ -25,13 +25,13 @@
     background-color: $purple-clr;
     padding: 8px 12px;
     border-radius: 8px;
-    svg {
-      margin-inline-end: 24px;
-      stroke: $orange-clr;
+    line-height: 1.5;
+    img {
+      margin-inline-end: 12px;
     }
     .price-wrapper {
       @include flex(center, center);
-      gap: 24px;
+      gap: 18px;
     }
     .coin-details {
       h3 {
