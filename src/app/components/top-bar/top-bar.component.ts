@@ -1,13 +1,10 @@
-import { Component } from "@angular/core";
-import { CommonModule } from "@angular/common";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-top-bar",
+  selector: 'app-top-bar',
   standalone: true,
   imports: [],
-  templateUrl: "./top-bar.component.html",
-  styleUrl: "./top-bar.component.scss",
+  templateUrl: './top-bar.component.html',
+  styleUrl: './top-bar.component.scss',
 })
-export class TopBarComponent {
-}
-
+export class TopBarComponent {}
